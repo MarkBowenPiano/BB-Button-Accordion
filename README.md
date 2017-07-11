@@ -47,8 +47,6 @@ function zestsms_enqueue_bb_scripts() {
 
 add_filter('fl_builder_render_js', 'zestsms_add_custom_js', 10, 4);
 function zestsms_add_custom_js($js, $nodes, $global_settings, $include_global) {
-print_r($include_global);
-
 	if( $include_global ) {
 		$dirs = array(
 			'js'
